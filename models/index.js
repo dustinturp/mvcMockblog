@@ -12,5 +12,4 @@ BlogPost.belongsTo(User, {
     onDelete: 'SET NULL'
 });
 
-
 module.exports = { User, BlogPost}

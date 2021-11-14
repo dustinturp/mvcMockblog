@@ -1,5 +1,5 @@
 const seedUsers = require('./user-seeds');
-const seedBlogPosts = require('./blogpost-seeds');
+const seedBlogPosts = require('./blogposts-seeds');
 
 const sequelize = require('../config/connection');
 
