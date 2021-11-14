@@ -18,6 +18,13 @@ BlogPost.init(
         isURL: true,
       },
     },
+    post_url: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          isURL: true,
+        },
+      },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -30,8 +37,8 @@ BlogPost.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'blog_post'
+    modelName: "blog_post",
   }
 );
 
-model.exports = BlogPost;
+module.exports = BlogPost;
