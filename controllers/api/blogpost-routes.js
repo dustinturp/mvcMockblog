@@ -4,7 +4,6 @@ const withAuth = require("../../utils/auth");
 
 // get all blog posts
 router.get("/", (req, res) => {
-  console.log("======================");
   BlogPost.findAll({
     attributes: ["id", "post_url", "title", "created_at"],
     include: [

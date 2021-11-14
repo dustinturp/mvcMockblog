@@ -4,8 +4,6 @@ mock blog app using mvc
 ## requirements
 
 ### Node Packages
- 
-
 express
 express-handlebars
 express-session
