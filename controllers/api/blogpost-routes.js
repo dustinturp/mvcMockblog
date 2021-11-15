@@ -5,13 +5,13 @@ const withAuth = require("../../utils/auth");
 // get all blog posts
 router.get("/", (req, res) => {
   BlogPost.findAll({
-    attributes: ["id", "post_url", "title", "created_at"],
+    attributes: ["id", "post_url", "title"],
     include: [
       {
         model: User,
         attributes: ["username"],
       },
-    ],
+    ] //removed comma
   })
     .then((dbPostData) => res.json(dbPostData))
     .catch((err) => {
@@ -26,7 +26,7 @@ router.get("/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "post_url", "title", "created_at"],
+    attributes: ["id", "post_url", "title"], // removed created_at
     include: [
       {
         model: User,
