@@ -34,6 +34,6 @@ app.use(express.static(path.join(__dirname, 'public'))); // built in middlware f
 // turn on routes // app.use(routes);
 app.use(require('./controllers/'));
 // turn on connection to db and server
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
 });

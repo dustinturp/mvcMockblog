@@ -1,7 +1,10 @@
-const { Model, DataTypes } = require('sequelize');
+const { Sequelize, Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+const { User } = require('./User');
 
-class BlogPost extends Model {}
+class BlogPost extends Model {
+
+}
 
 BlogPost.init(
   {
@@ -35,6 +38,7 @@ BlogPost.init(
   },
   {
     sequelize,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: "blog_post",

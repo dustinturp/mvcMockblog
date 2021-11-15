@@ -1,6 +1,7 @@
-const { Model, DataTypes } = require('sequelize');
+const { Sequelize, Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
+const { BlogPost } = require('./BlogPost');
 
 class User extends Model {
   //instance data per user to check password
@@ -9,7 +10,8 @@ class User extends Model {
   }
 }
 
-User.init({
+User.init(
+  {
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -51,7 +53,7 @@ User.init({
     },
   },
   sequelize,
-  timestamps: false,
+  timestamps: true,
   freezeTableName: true,
   underscored: true,
   modelName: "user",
