@@ -53,11 +53,11 @@ User.init(
       return updatedUserData;
     },
   },
-  sequelize: sequelize,
+  sequelize,
   timestamps: true,
   freezeTableName: true,
   underscored: true,
-  modelName: "user",
+  modelName: 'user',
   }
 );
 
