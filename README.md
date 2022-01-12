@@ -14,7 +14,6 @@ mock blog app using mvc
 * bcrypt
 
 
-
 `npm i` 
 
 ## Create DB
@@ -30,3 +29,8 @@ source schema.sql
 ## deploy
 
 `git push heroku main`
+
+## Deployment 
+[link to heroku app](https://mvc-mock-blog.herokuapp.com/)
+
+
