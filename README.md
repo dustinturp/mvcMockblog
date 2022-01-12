@@ -33,4 +33,6 @@ source schema.sql
 ## Deployment 
 [link to heroku app](https://mvc-mock-blog.herokuapp.com/)
 
+## example
 
+![example](./exampleApp.png)
