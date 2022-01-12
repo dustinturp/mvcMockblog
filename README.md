@@ -1,9 +1,11 @@
 # mvcMockblog
 mock blog app using mvc
 
-## requirements
+## Description
 
-### Node Packages
+Mock blog using Sequelize 
+
+## Node Packages
 * express
 * express-handlebars
 * express-session
@@ -24,15 +26,16 @@ source schema.sql
 
 ### populate db
 
-`node seed`
+`npm run seeds`
 
 ## deploy
 
+Deply the app to heroku.
 `git push heroku main`
 
 ## Deployment 
 [link to heroku app](https://mvc-mock-blog.herokuapp.com/)
 
-## example
+## Example
 
 ![example](./exampleApp.png)
